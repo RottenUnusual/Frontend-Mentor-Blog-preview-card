@@ -23,12 +23,21 @@ main{
 }
 
 .card{
-  box-shadow: 5px 5px 5px 5px;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 5px 5px;
   background-color: white;
   padding: 15px;
   border-radius: 3%;
   width: 60%;
+  transition: 1s;
 }
+
+.card:hover{
+  box-shadow: 10px 10px 10px;
+  transition: 0.5s;
+  }
 
 .illustration-article{
   width: 100%;
@@ -38,16 +47,19 @@ main{
 .learningbtn{
   background-color: hsl(47, 88%, 63%);
   padding: 5px;
+  border-radius: 2px;
   border: none;
   margin: 17px 0px 10px 0px ;
   font-weight: bold;
 }
 
 .card h1{
+  transition: 1s;
   margin:10px 0px 10px 0px;
 }
 
-.card h1:hover{
+.card:hover h1 {
+  transition: 0.5s;
   color: hsl(47, 88%, 63%);
 }
 
@@ -63,6 +75,7 @@ main{
 .card-footer  {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 
